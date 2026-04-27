@@ -9,7 +9,7 @@ A .NET 8 Web API backend system with JWT authentication, role-based authorizatio
 - Role + Policy-based Authorization (RBAC)
 - AutoMapper
 - FluentValidation
-- Swagger / OpenAPI
+- Swagger UI
 - BCrypt Password Hashing
 
 ## Project Architecture
