@@ -48,6 +48,28 @@ AdminSys.Api
 │  
 └── Mappings  
     └── AutoMapper Profiles  
+
+
+## Screenshots
+### API Overview (Swagger)  
+![Swagger UI](imgs/swagger_main.png)  
+
+### Authentication  
+
+![Login](imgs/login.png)
+
+### Swagger Authorization - Admin  
+![Authorize](imgs/auth.png)  
+
+### Authorization Example - User  
+![403](imgs/403.png)  
+
+### Database Schema  
+User Data  
+![DB](imgs/db_user.png)  
+Refesh Token Data  
+![DB](imgs/db_refreshToken.png)  
+
 ## Features
 ### Authentication
 - User Registration
