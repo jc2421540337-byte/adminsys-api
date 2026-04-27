@@ -66,9 +66,9 @@ AdminSys.Api
 
 ### Database Schema  
 User Data  
-![DB](imgs/db_user.png)  
+![DB_User](imgs/db_user.png)  
 Refesh Token Data  
-![DB](imgs/db_refreshToken.png)  
+![DB_refreshToken](imgs/db_refreshToken.png)  
 
 ## Features
 ### Authentication
