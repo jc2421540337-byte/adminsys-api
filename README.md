@@ -13,41 +13,41 @@ A .NET 8 Web API backend system with JWT authentication, role-based authorizatio
 - BCrypt Password Hashing
 
 ## Project Architecture
-AdminSys.Api
+AdminSys.Api  
+│  
+├── Controllers  
+│   ├── AuthController  
+│   ├── UsersController  
+│   ├── TokenController  
+│  
+├── Data  
+│   └── AppDbContext  
+│  
+├── Models  
+│   ├── User  
+│   ├── RefreshToken  
+│   ├── BaseEntity  
+│  
+├── DTOs  
+│   ├── Auth  
+│   ├── Users  
+│   └── Common (ApiResponse, PagedResult)  
 │
-├── Controllers
-│   ├── AuthController
-│   ├── UsersController
-│   ├── TokenController
+├── Services  
+│   ├── IUserService  
+│   ├── UserService  
+│   ├── ITokenService  
+│   └── TokenService  
 │
-├── Data
-│   └── AppDbContext
+├── Authorization  
+│   ├── Roles  
+│   └── Permissions  
 │
-├── Models
-│   ├── User
-│   ├── RefreshToken
-│   ├── BaseEntity
-│
-├── DTOs
-│   ├── Auth
-│   ├── Users
-│   └── Common (ApiResponse, PagedResult)
-│
-├── Services
-│   ├── IUserService
-│   ├── UserService
-│   ├── ITokenService
-│   └── TokenService
-│
-├── Authorization
-│   ├── Roles
-│   └── Permissions
-│
-├── Middlewares
-│   └── ExceptionMiddleware
-│
-└── Mappings
-    └── AutoMapper Profiles
+├── Middlewares  
+│   └── ExceptionMiddleware  
+│  
+└── Mappings  
+    └── AutoMapper Profiles  
 ## Features
 ### Authentication
 - User Registration
@@ -82,17 +82,17 @@ cd AdminSys.Api
 dotnet restore  
 
 ### 3 Configure appsettings.json
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Data Source=adminsys.db"
-  },
-  "Jwt": {
-    "Key": "YOUR_SUPER_SECRET_KEY",
-    "Issuer": "AdminSys",
-    "Audience": "AdminSysClient",
-    "ExpireMinutes": 60
-  }
-}
+{  
+  "ConnectionStrings": {  
+    "DefaultConnection": "Data Source=adminsys.db"  
+  },  
+  "Jwt": {  
+    "Key": "YOUR_SUPER_SECRET_KEY",  
+    "Issuer": "AdminSys",  
+    "Audience": "AdminSysClient",  
+    "ExpireMinutes": 60  
+  }  
+}  
 
 ### 4 Run migrations
 dotnet ef database update  

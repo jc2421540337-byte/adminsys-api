@@ -1,0 +1,32 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# Rider
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# EF Core
+Migrations/*Designer.cs
+Migrations/*.Snapshot.cs
+
+# SQLite database (VERY IMPORTANT)
+*.db
+*.db-shm
+*.db-wal
+
+# Secrets
+appsettings.Development.json
+appsettings.json
